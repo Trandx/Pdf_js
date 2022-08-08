@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDFjs By Trandx</title>
+
+    <link rel="stylesheet" href="/pdf.css">
+</head>
+<body>
+    <h1>PDF.js Previous/Next example</h1>
+
+    <div>
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+
+    <button id="zoomPlus">zoom +</button>
+
+    <button id="zoomMoin">zoom -</button>
+
+    <button id="resizeField">resize</button>
+    
+    &nbsp; &nbsp;
+    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+    </div>
+
+    <canvas id="the-canvas"></canvas>
+
+</body>
+<!-- <script src="/lib/PDFjs.js"></script>
+<script src="/pdf.js" ></script>
+<script>
+    showPdf('./test.pdf')
+</script> -->
+
+<script type="module">
+    
+    import showPdf from './pdf_module.js'
+    console.log(showPdf);
+    showPdf('./test.pdf')
+</script>
+</html>
