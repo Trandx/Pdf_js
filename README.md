@@ -1,4 +1,4 @@
-# Trandx/pdfjs
+# Trandx_pdfjs
 
 This module can help coders to read some pdf files into her HTML code
 
